@@ -1,0 +1,18 @@
+# PCSX2 stuff
+*.exe
+logs
+Langs
+docs
+PCSX2_ui.ini
+LilyPad.ini
+memcards
+cheats
+snaps
+snaps
+sstates
+*.dbf
+*.fx
+
+# custom templates
+*.reg
+fart.bat
