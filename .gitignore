@@ -12,6 +12,8 @@ snaps
 sstates
 *.dbf
 *.fx
+*_ws.zip
+*_ws
 
 # custom templates
 *.reg
