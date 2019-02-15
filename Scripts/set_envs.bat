@@ -12,6 +12,7 @@ echo pcsx2.exe is %PCSX_MAIN_EXE%
 set /p _sharememcards="Do you want to share memcards(yes|no): "
 IF "%_sharememcards%" == "yes" (
   set /p SHARED_MEMCARDS_FOLDER=your memcards folder path:
+  echo Set shared folder to %SHARED_MEMCARDS_FOLDER% 
 )
 cd ..
 set PCSX_USER_CONFIGS=%cd%\Games

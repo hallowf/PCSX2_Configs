@@ -2,7 +2,7 @@
 set PCSX_GAME=Jak1.iso
 set GAME_ISO=%PCSX_USER_GAMES%\%PCSX_GAME%
 echo iso is %GAME_ISO%
-set GAME_CONFIG=%PCSX_USER_CONFIGS%\Jak1
+set GAME_CONFIG=%PCSX_USER_CONFIGS%\Games\Jak1
 echo User Config is %GAME_CONFIG%
 IF DEFINED SHARED_MEMCARDS_FOLDER (
   fsutil reparsepoint query "%GAME_CONFIG%\memcards\" | find "Symbolic Link" >nul && echo symbolic link found on %GAME_CONFIG%\memcards || mklink /D %GAME_CONFIG%\memcards %SHARED_MEMCARDS_FOLDER%
