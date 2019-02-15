@@ -3,8 +3,8 @@ REM FIND AND REPLACE STRINGS (PING USED FOR DELAY 2s)
 cd ""
 set BASE_DIR1=%cd%
 set BASE_DIR2=%BASE_DIR1:\=\\%
-start fart.exe -i -- pcsx2.reg "*BASE_DIR1*" "%BASE_DIR2%"
+start %FART_EXE% -i -- pcsx2.reg "*BASE_DIR1*" "%BASE_DIR2%"
 PING 127.0.0.1 -n 3 >NULL
-start fart.exe -i -- inis\PCSX2_ui.ini "*BASE_DIR1*" "%BASE_DIR2%"
+start %FART_EXE% -i -- inis\PCSX2_ui.ini "*BASE_DIR1*" "%BASE_DIR2%"
 PING 127.0.0.1 -n 3 >NULL
-start fart.exe -i -- inis\PCSX2_ui.ini "SHARED_DIR" "%PCSX_SHARED_DIR%"
+start %FART_EXE% -i -- inis\PCSX2_ui.ini "SHARED_DIR" "%PCSX_SHARED_DIR%"
