@@ -26,7 +26,7 @@ Please do everything by order
   1. First make sure you checked [Config](#config)
   2. Follow the exact order of [Running](#running)
 
-### Config
+### Configuration
   Make sure your directory structure is as described below:
   ```
   AnyFolder
@@ -44,16 +44,43 @@ Please do everything by order
     |  memcards <- you can put this here it's completely optional however
     |
     PCSX-1.4.0 <- PCSX2 program (avoid spaces, if it has, rename it)
+    |  |
+    |  fart.exe <- Having fart.ex here helps if you use Config Manager
 ```
 
 ### Install
 
-Using git:
+#### User
+
+Go [here](), download the latest version, and place the contents of the zip in a folder called Configs as specified in [Configuration](#config)
+
+#### Dev
+Using git on windows:
 
 ```
 cd AnyFolder
 
 git clone https://github.com/hallowf/PCSX2_Configs Configs
+
+py -3.7 -m pip install virtualenv
+
+py -3.7 -m virtualenv venv
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python main.py --help
+
+
+# Building
+
+pyinstaller main.py
+
+# Configure main.spec
+
+pyinstaller --onefile main.spec
+
 ```
 
 Or just download it as a zip, create the folder Configs and copy the contents of the zip inside
@@ -96,12 +123,12 @@ I won't be committing more configs to this github repo since there are a lot of 
 ## The variables
 1. set_envs.bat
   * CONFIG_SCRIPTS_DIR => scripts directory containing scripts for each game
-  * PCSX_BASE_DIR => pcsx2 root directory
+  * PCSX_BASE_DIR => pcsx2 install root directory
   * PCSX_USER_GAMES => Games folder
   * PCSX_SHARED_DIR => Shared folder
   * PCSX_MAIN_EXE => pcsx2.exe main executable
   * SHARED_MEMCARDS_FOLDER => Location of your memcards (C:\\users\\\\user\\Documents\\PCSX2\\memcards)
-  * PCSX_USER_CONFIGS => Games presets folder (EX: Configs\\Games\\Jak1)
+  * PCSX_USER_CONFIGS => this project's path
 
 2. game.cmd
   * PCSX_GAME => iso name
