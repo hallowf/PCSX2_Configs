@@ -13,9 +13,9 @@
   * LilyPad.ini
   * GameIndex.dbf
 
-Some other folders are also not included like logs, Langs, cheats, snaps, etc since those are specific to each user an you can obtain them from pcsx2's main folder
-
 I'm not sure if I can redistribute them so I won't, you can obtain them in your installation folder except for [fart.exe](https://sourceforge.net/projects/fart-it/)
+
+Some other folders are also not included like logs, Langs, cheats, snaps, etc since those are specific to each user an you can obtain them from pcsx2's main folder
 
 * Here is their original location:
   * pcsx2.exe => root folder of installation
@@ -23,7 +23,7 @@ I'm not sure if I can redistribute them so I won't, you can obtain them in your 
   * LilyPad.ini => inis folder in root
 
 Please do everything by order
-  1. First make sure you checked [Config](#config)
+  1. First make sure you checked [Config](#configuration)
   2. Follow the exact order of [Running](#running)
 
 ### Configuration
@@ -32,6 +32,8 @@ Please do everything by order
   AnyFolder
     |
     Configs <-- this project
+    |  |
+    |  manager.exe <- *if you use config manager
     |
     Games <- isos folder
     |
@@ -52,7 +54,7 @@ Please do everything by order
 
 #### User
 
-Go [here](), download the latest version, and place the contents of the zip in a folder called Configs as specified in [Configuration](#config)
+Download [this](https://github.com/hallowf/PCSX2_Configs/archive/master.zip) zip file, and place the contents of the zip in a folder called Configs as specified in [Configuration](#config)
 
 #### Dev
 Using git on windows:
@@ -88,7 +90,8 @@ Or just download it as a zip, create the folder Configs and copy the contents of
 ### Running
 
 #### Config manager
-[This](https://github.com/hallowf/PCSX2_Configs_Manager) simple python command line tool can help you run, manage or create new presets
+[This](https://github.com/hallowf/PCSX2_Configs_Manager) simple python command line tool can help you run, manage or create new presets,
+download it and add it to the root folder of configs
 
 #### Manual
 1. Open terminal/command-line
@@ -112,12 +115,17 @@ Or just download it as a zip, create the folder Configs and copy the contents of
 I won't be committing more configs to this github repo since there are a lot of games to cover and other things that could change like the configs themselves but [here](https://mega.nz/#F!mKZl0QYa!ynfHAmxUSWUm1CQ_L5ENEQ) is a link to a mega folder with more game presets that I will try to keep updated
 
 ### Make your own:
+**[Config manager](config-manager) can easily create new presets based on your current pcsx settings**
+
 1. Copy one of the existing cmd scripts like Jak1.cmd (Name it to whateveryouwant.cmd)
 2. Rename PCSX_GAME=Jak1.iso => PCSX_GAME=YourGame.iso (*make it simple avoid spaces and weird characters*)
+  * it should match the name of the game iso in your games folder
 2. Create a new game folder
-3. Copy the [templates](#running) to the new folder
+3. Copy and rename the [templates](#running) to the new folder
 4. Copy everything from you PCSX2 installation except Plugins and Bios \**if you have them there*
-
+5. Run set_envs.cmd
+6. Run fart.bat
+7. Play
 
 
 ## The variables
@@ -141,7 +149,7 @@ I won't be committing more configs to this github repo since there are a lot of 
 ## Notes:
 1. Software version : PCSX2 v1.5.0-dev-2948-gdabc99f46
 2. Make sure you are naming everything correctly
-  * Games should be game.iso and they should be in the directory describe in the [config](#config)
+  * Games should be game.iso and they should be in the directory described in the [Configuration](#configuration)
   * The same applies for scripts and .ini files
 3. The directories and their respective naming are important
   * This is not magic it simply uses environment variables to automate more parts of the process, these same variables are specific and set accordingly so for convenience simplify everything
