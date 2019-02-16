@@ -88,7 +88,7 @@ Or just download it as a zip, create the folder Configs and copy the contents of
 ### Running
 
 #### Config manager
-[This](https://github.com/hallowf/PCSX2_Configs_Manager) simple python command line tool can help you run or create new presets
+[This](https://github.com/hallowf/PCSX2_Configs_Manager) simple python command line tool can help you run, manage or create new presets
 
 #### Manual
 1. Open terminal/command-line
@@ -109,7 +109,7 @@ Or just download it as a zip, create the folder Configs and copy the contents of
 6. Now it's just terminal navigate to the scripts folder run the cmd for the game you configured to run EX:`games\\Jak1.cmd` and then run the pcsx2.bat script
 
 ### Updates:
-I won't be committing more configs to this github repo since there are a lot of games to cover but [here](https://mega.nz/#F!mKZl0QYa!ynfHAmxUSWUm1CQ_L5ENEQ) is a link to a mega folder with more game presets
+I won't be committing more configs to this github repo since there are a lot of games to cover and other things that could change like the configs themselves but [here](https://mega.nz/#F!mKZl0QYa!ynfHAmxUSWUm1CQ_L5ENEQ) is a link to a mega folder with more game presets that I will try to keep updated
 
 ### Make your own:
 1. Copy one of the existing cmd scripts like Jak1.cmd (Name it to whateveryouwant.cmd)
