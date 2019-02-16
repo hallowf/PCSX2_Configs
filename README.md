@@ -54,43 +54,14 @@ Please do everything by order
 
 #### User
 
-Download [this](https://github.com/hallowf/PCSX2_Configs/archive/master.zip) zip file, and place the contents of the zip in a folder called Configs as specified in [Configuration](#config)
+Download [this](https://github.com/hallowf/PCSX2_Configs/archive/master.zip) zip file, and place the contents of the zip in a folder called Configs as specified in [Configuration](#configuration)
 
-#### Dev
-Using git on windows:
-
-```
-cd AnyFolder
-
-git clone https://github.com/hallowf/PCSX2_Configs Configs
-
-py -3.7 -m pip install virtualenv
-
-py -3.7 -m virtualenv venv
-
-venv\Scripts\activate
-
-pip install -r requirements.txt
-
-python main.py --help
-
-
-# Building
-
-pyinstaller main.py
-
-# Configure main.spec
-
-pyinstaller --onefile main.spec
-
-```
-
-Or just download it as a zip, create the folder Configs and copy the contents of the zip inside
+See [Running](#running) for details on how to run the scripts
 
 ### Running
 
 #### Config manager
-[This](https://github.com/hallowf/PCSX2_Configs_Manager) simple python command line tool can help you run, manage or create new presets,
+[This](https://github.com/hallowf/PCSX2_Configs_Manager/releases) simple python command line tool can help you run, manage or create new presets,
 download it and add it to the root folder of configs
 
 #### Manual
@@ -98,7 +69,7 @@ download it and add it to the root folder of configs
 
 2. In the terminal navigate to scripts and run set_envs.cmd (Make sure you provide the correct details)
 
-2. Open file explorer go to Thisproject/Games/Game and paste the [templates]() with the respective names:
+2. Open file explorer go to Thisproject/Games/Game and paste the templates from Thisproject\\templates with the respective names:
   * PCSX2_ui.ini.template => EX: Games\\Jak1\\inis\\PCSX2_ui.ini
   * pcsx2.reg.template => EX: Games\\Jak1\\pcsx2.reg
 
@@ -159,7 +130,7 @@ I won't be committing more configs to this github repo since there are a lot of 
 
 1. AMD drivers have poor performance with OpenGL so it is out of question to use for now
 2. Multi Threaded microVU1 always seems to help
-3. Software mode always seems to fix texture issues but it does not allow to change the resolution and performance is poor
+3. Software mode seems to fix texture issues but it does not allow to change the resolution and performance is poor
 4. GS SSE4 seems to be the most stable*ish gs plugin **Performance of the plugin is most definitely associated with GPU and CPU, some might behave differently...**
 
 ## My system specs:
@@ -167,7 +138,7 @@ I won't be committing more configs to this github repo since there are a lot of 
   * CPU: AMD FX-6300
   * RAM: 8GB KINGSTON DDR3 1866 cas10
   * MOBO: MSI 970 GAMING
-  * GPU: ASUS RX460
+  * GPU: ASUS RX 460
   * POWER SUPPLY: EVGA 600W 80+ BRONZE
   * BOOT DRIVE: KINGSTON SSD 120GB
   * STORAGE DRIVES: \*2 WESTERN DIGITAL 500GB RAID 0
