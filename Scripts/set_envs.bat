@@ -2,8 +2,6 @@
 set CONFIG_SCRIPTS_DIR=%cd%
 set /p PCSX_BASE_DIR=Enter pcsx2 root dir:
 echo Dir set %PCSX_BASE_DIR%
-set /p FART_EXE=Enter fart.exe location:
-echo fart.exe set to %FART_EXE%
 set /p PCSX_CURRENT_BIOS_NAME=Enter your bios name:
 echo bios name set to %PCSX_CURRENT_BIOS_NAME%
 set /p PCSX_USER_GAMES=Enter your games folder:

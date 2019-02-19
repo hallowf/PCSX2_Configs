@@ -2,6 +2,11 @@
 1. Why did I do this?
   * To automate [this](https://forums.pcsx2.net/Thread-HOWTO-configure-PCSX2-to-run-different-games-from-shortcuts)
 
+2. [This](https://github.com/hallowf/PCSX2_Configs_Manager) cli tool can automate the whole process really easily without any scripts or admin permissions it is easier to use and more flexible
+
+3. I won't be updating this project anymore since the cli make everything easier,
+and it's just 2 files
+
 
 ## Usage:
 
@@ -62,7 +67,7 @@ See [Running](#running) for details on how to run the scripts
 
 #### Config manager
 [This](https://github.com/hallowf/PCSX2_Configs_Manager/releases) simple python command line tool can help you run, manage or create new presets,
-download it and add it to the root folder of configs
+download it and add it to the root folder of configs, it does not require fart
 
 #### Manual
 1. Open terminal/command-line
